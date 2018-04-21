@@ -1,0 +1,6 @@
+rootProject.name = 'spring-boot-multi-package-control'
+
+include 'control-core'
+include 'control-package-jar'
+include 'control-package-war'
+include 'control-package-war-wildfly'
