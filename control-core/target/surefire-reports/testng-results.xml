@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Surefire suite" duration-ms="91" started-at="2018-04-21T17:40:48Z" finished-at="2018-04-21T17:40:48Z">
+  <suite name="Surefire suite" duration-ms="87" started-at="2018-04-21T18:15:50Z" finished-at="2018-04-21T18:15:50Z">
     <groups>
     </groups>
-    <test name="Surefire test" duration-ms="91" started-at="2018-04-21T17:40:48Z" finished-at="2018-04-21T17:40:48Z">
+    <test name="Surefire test" duration-ms="87" started-at="2018-04-21T18:15:50Z" finished-at="2018-04-21T18:15:50Z">
       <class name="co.sys.ControlApplicationTest">
-        <test-method status="PASS" signature="contextLoads()[pri:0, instance:contextLoads(co.sys.ControlApplicationTest)]" name="contextLoads" duration-ms="3" started-at="2018-04-21T19:40:48Z" finished-at="2018-04-21T19:40:48Z">
+        <test-method status="PASS" signature="contextLoads()[pri:0, instance:contextLoads(co.sys.ControlApplicationTest)]" name="contextLoads" duration-ms="3" started-at="2018-04-21T20:15:50Z" finished-at="2018-04-21T20:15:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- contextLoads -->
