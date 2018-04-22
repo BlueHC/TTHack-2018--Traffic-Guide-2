@@ -1,13 +1,10 @@
 package co.sys;
 
-import org.junit.Test;
-import org.springframework.boot.test.context.SpringBootTest;
-
 //@RunWith(SpringRunner.class)
-@SpringBootTest
+//@SpringBootTest
 public class ControlApplicationTest {
 
-	@Test
+//	@Test
 	public void contextLoads() {
 	}
 

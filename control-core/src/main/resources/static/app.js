@@ -1,9 +1,9 @@
 mapboxgl.accessToken = 'pk.eyJ1IjoibWF0aWFzcGVyZWlyYSIsImEiOiJjamc5Y2hqMWEwOXp6MndveTVpdjduNnFrIn0.Z7KdFowU7LmQLsmE0jOOnQ';
 var map = new mapboxgl.Map({
-  container: 'map',
-  style: 'mapbox://styles/mapbox/streets-v10',
-  center: [10, 53.55], // starting position
-  zoom: 9 // starting zoom
+    container: 'map',
+    style: 'mapbox://styles/mapbox/streets-v10',
+    center: [10, 53.55], // starting position
+    zoom: 9 // starting zoom
 });
 
 var lat = 10.007;
@@ -25,17 +25,17 @@ function pointOnCircle() {
     long = long + counter;
 
     if (long > 53.681) {
-      long = 53.681;
+        long = 53.681;
     };
     if (lat > 10.115) {
-      lat = 10.115;
+        lat = 10.115;
     };
 
     return {
         "type": "Point",
         "coordinates": [
-        lat,
-        long
+            lat,
+            long
         ]
     };
 }
@@ -46,17 +46,17 @@ function pointOnCircle2() {
     long2 = long2 - counter2;
 
     if (long2 < 53.458) {
-      long2 = 53.458;
+        long2 = 53.458;
     };
     if (lat2 < 9.905) {
-      lat2 = 9.905;
+        lat2 = 9.905;
     };
 
     return {
         "type": "Point",
         "coordinates": [
-        lat2,
-        long2
+            lat2,
+            long2
         ]
     };
 }
@@ -67,38 +67,38 @@ function pointOnCircle3() {
     long3 = long3 - (0.3 * counter3);
 
     if (lat3 > 10.247) {
-      long3 = 53.508;
-      lat3 = 10.247;
+        long3 = 53.508;
+        lat3 = 10.247;
     };
 
     return {
         "type": "Point",
         "coordinates": [
-        lat3,
-        long3
+            lat3,
+            long3
         ]
     };
 }
 
 function pointOnCircle4() {
-  counter4 = counter4 + 0.0000002;
-  if (long4 > 53.558) {
-    lat4 = lat4 + (0.07 * counter4);
-    long4 = long4 - counter4;
-  }else {
-    lat4 = lat4 - (2 * counter4);
-    long4 = long4 - (0.1 * counter4);
-    if (long4 < 53.550) {
-      long4 = 53.550;
-      lat4 = 9.851;
-    }
-  };
+    counter4 = counter4 + 0.0000002;
+    if (long4 > 53.558) {
+        lat4 = lat4 + (0.07 * counter4);
+        long4 = long4 - counter4;
+    }else {
+        lat4 = lat4 - (2 * counter4);
+        long4 = long4 - (0.1 * counter4);
+        if (long4 < 53.550) {
+            long4 = 53.550;
+            lat4 = 9.851;
+        }
+    };
 
     return {
         "type": "Point",
         "coordinates": [
-        lat4,
-        long4
+            lat4,
+            long4
         ]
     };
 }
