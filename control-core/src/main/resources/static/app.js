@@ -204,3 +204,7 @@ function simulate() {
         }
     });
 }
+
+// setTimeout(() => {
+//     $(".bd-example-modal-sm").modal("show");
+// }, 10000);
