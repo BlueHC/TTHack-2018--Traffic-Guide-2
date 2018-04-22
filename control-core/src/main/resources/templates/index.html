@@ -147,7 +147,7 @@
                 <a class="nav-link" href="#"> <i class="fas fa-info">Notifications</i> </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#"> <i class="fas fa-user-circle">Profile</i></a>
+                <a class="nav-link" href="#"> <i class="fas fa-user-circle">Profile</i></a>                
             </li>
         </ul>
         <form class="form-inline my-2 my-lg-0">
@@ -164,10 +164,8 @@
         <a class="nav-link active" href="#"><i class="fas fa-list-ul"></i>&nbsp; &nbsp; Events</a>
         <a class="nav-link" href="#"><i class="fas fa-bolt"></i> &nbsp; &nbsp; Weather</a>
         <a class="nav-link" href="#"><i class="fas fa-bomb"></i> &nbsp; &nbsp; Emergency</a>
-
-        <a class="nav-link" href="#">  </a>
-
-
+        <a class="nav-link" href="#" data-target="#twit" data-toggle="collapse"><i class="fab fa-twitter"></i> &nbsp; &nbsp; News</a>
+        
         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
             <i class="fas fa-play"></i> &nbsp; &nbsp;  Run Simulation
         </button>
@@ -184,15 +182,14 @@
 
         <div id='map' style="width:80%">
             <input type='button' class='button' value='Simulate' onclick="simulate();"/></div>
-        <script th:src="@{app.js}"></script>
+        <!-- <script th:src="@{app.js}"></script> -->
 
 
     </div>
 
     <div class="spacer col-1" ></div>
 
-    <div id='twit' class="my-3 p-3 bg-white rounded box-shadow col-3 collapse show width">
-        <button role="button" class="btn btn-danger" data-toggle="collapse" data-target="#twit"> Twit Collapse</button>
+    <div id='twit' class="my-3 p-3 bg-white rounded box-shadow col-3 collapse">
         <h6 class="border-bottom border-gray pb-2 mb-0"><i class="fab fa-twitter"></i>&nbsp; &nbsp; Tweets about traffic flow</h6>
         <div class="media text-muted pt-3">
             <img data-src="holder.js/32x32?theme=thumb&bg=007bff&fg=007bff&size=1" alt="" class="mr-2 rounded">
@@ -217,7 +214,7 @@
         </div>
 
     </div>
-    <div class="my-3 p-3 bg-white rounded box-shadow col-3">
+    <div id="advices" class="my-3 p-3 bg-white rounded box-shadow col-3 collapse">
         <h6 class="border-bottom border-gray pb-2 mb-0"> <i class="fas fa-code-branch"></i>&nbsp; &nbsp; Simulation's Advices</h6>
         <div class="media text-muted pt-3">
 
@@ -231,7 +228,7 @@
 
         <br>
 
-        <button type="button" class="btn btn-info"> <i class="fas fa-check-circle"></i>&nbsp; &nbsp; Accept Suggestion</button>
+        <button type="button" class="btn btn-info" data-target="#advices" data-toggle="collapse" ><i class="fas fa-check-circle"></i>&nbsp; &nbsp; Accept Suggestion</button>
         <div class="media text-muted pt-3"> </div>
 
         <button type="button" class="btn btn-info"><i class="far fa-bell"></i>&nbsp; &nbsp; Notify Users</button>
@@ -255,7 +252,7 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary"><i class="fas fa-play"></i> &nbsp; &nbsp; Start Simulation</button>
+                    <button type="button" class="btn btn-primary" data-target="#advices" data-toggle="collapse" data-dismiss="modal"><i class="fas fa-play"></i> &nbsp; &nbsp; Start Simulation</button>
                 </div>
             </div>
         </div>
@@ -274,7 +271,7 @@
 <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.44.2/mapbox-gl.js'></script>
 <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
 <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.44.2/mapbox-gl.css' rel='stylesheet' />
-<script th:src="@{app.js}"></script>
+<script src="../static/app.js"></script>
 <script>
     $(function () {
         'use strict'
